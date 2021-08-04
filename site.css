@@ -1,3 +1,8 @@
-ul {
-    line-height: 45px;
+ul{
+    line-height: 20px;
+}
+
+li.pub{
+    width: 50%;
+    margin-bottom: 25px;
 }
