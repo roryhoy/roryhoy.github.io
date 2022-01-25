@@ -29,3 +29,15 @@ body{
 #nameTitle{
     color: #f8ff9b;
 }
+
+.nav-pills > li > a{
+    color: #888888;
+}
+
+.nav-pills > li > a:focus{
+    background-color:#f8ff9b;
+}
+
+.bio{
+    font-size: 85%;
+}
