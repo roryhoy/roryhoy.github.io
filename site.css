@@ -1,3 +1,17 @@
+/* 
+Site colour scheme: 
+Deep purples and blues
+
+#f8ff9b - Text - Pastelish yellow
+#0C0032 - Range of blues VV
+#190061
+#240090
+#3500D3
+#282828 - Grey
+
+*/
+
+
 ul{
     line-height: 20px;
 }
@@ -5,4 +19,9 @@ ul{
 li.pub{
     width: 50%;
     margin-bottom: 25px;
+}
+
+body{
+    background: #282828;
+    color: #f8ff9b;
 }
