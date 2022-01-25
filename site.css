@@ -10,20 +10,22 @@ Deep purples and blues
 #282828 - Grey
 
 */
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat:wght@100;300&display=swap');
 
 ul{
     line-height: 20px;
 }
 
 li.pub{
-    width: 50%;
     margin-bottom: 25px;
+    font-family: 'DM Sans', sans-serif;
+    color: aliceblue;
 }
 
 body{
     background: #282828;
     color: #f8ff9b;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #nameTitle{
@@ -34,10 +36,31 @@ body{
     color: #888888;
 }
 
-.nav-pills > li > a:focus{
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
     background-color:#f8ff9b;
+    color: #282828;
 }
 
-.bio{
-    font-size: 85%;
+.nav-pills{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.nav-link:focus, .nav-link:hover{
+    color: aliceblue;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+
+.header-container{
+    width: 75vw;
+}
+
+.body-div{
+    width: 75vw;
 }
