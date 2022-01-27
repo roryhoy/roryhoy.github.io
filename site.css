@@ -24,12 +24,12 @@ li.pub{
 
 body{
     background: #282828;
-    color: #f8ff9b;
+    color: aliceblue;
     font-family: 'Montserrat', sans-serif;
 }
 
 #nameTitle{
-    color: #f8ff9b;
+    color:#f8ff9b;
 }
 
 .nav-pills > li > a{
@@ -54,6 +54,8 @@ body{
 h1,h2,h3,h4,h5,h6{
     font-family: 'Outfit', sans-serif;
     font-weight: 100;
+    color: #f8ff9b;
+
 }
 
 
