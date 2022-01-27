@@ -53,11 +53,21 @@ body{
 
 h1,h2,h3,h4,h5,h6{
     font-family: 'Outfit', sans-serif;
-    font-weight: 100;
+    font-weight: 400;
     color: #f8ff9b;
 
 }
 
+/* .bio-body{
+    background-image: url("/images/bio/lidar-glitch-transparent.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: brightness(12%)
+} */
+
+header{
+    background-color: #282828;
+}
 
 .header-container{
     width: 75vw;
