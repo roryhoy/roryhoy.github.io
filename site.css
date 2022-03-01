@@ -16,6 +16,11 @@ ul{
     line-height: 20px;
 }
 
+.col-centered{
+    float: none;
+    margin: 0 auto;
+    }
+
 li.pub{
     margin-bottom: 25px;
     font-family: 'Montserrat', sans-serif;
