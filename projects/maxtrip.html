@@ -4,6 +4,29 @@
 		<meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+		<link rel="canonical" href="https://www.rhoy.ca/projects/maxtrip.html"/>
+		<meta name="description" content="Maxtrip is a project by Rory Hoy to port all control of Jack/JackTrip into Max.">
+  		<meta name="keywords" content="MaxTrip, Max, Trip, JackTrip, Projects, Rory, Hoy, PhD, student, sound, artist, Canadian, York, University, artificial, life, telematic, music, telepresence, virtual, digital, media, dispersion, Toronto">
+  		<meta name="author" content="Rory Hoy">
+		<meta name="robots" content="index, follow">
+		<meta name="twitter:title" content="Rory Hoy · MaxTrip"/>
+        <meta name="twitter:image" content="/images/maxtrip/maxtrip1.png"/>
+        <meta name="twitter:url" content="https://www.rhoy.ca/projects/maxtrip.html"/>
+        <meta name="twitter:card" content="summary"/>
+        <meta name="twitter:description" content="Maxtrip is a project by Rory Hoy to port all control of Jack/JackTrip into Max."/>
+		<meta itemprop="name" content="Rory Hoy · MaxTrip"/>
+        <meta itemprop="url" content="https://www.rhoy.ca/projects/maxtrip.html"/>
+        <meta itemprop="description" content="Maxtrip is a project by Rory Hoy to port all control of Jack/JackTrip into Max."/>
+        <meta itemprop="thumbnailUrl" content="/images/maxtrip/maxtrip1.png"/>
+		<meta property="og:site_name" content="Rory Hoy"/>
+        <meta property="og:title" content="Rory Hoy · MaxTrip"/>
+        <meta property="og:url" content="https://www.rhoy.ca/projects/maxtrip.html"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:description" content="Maxtrip is a project by Rory Hoy to port all control of Jack/JackTrip into Max."/>
+        <meta property="og:image" content="/images/maxtrip/maxtrip1.png"/>
+        <meta property="og:image:width" content="1095"/>
+        <meta property="og:image:height" content="890"/>
+
 		<!--Bootstrap CSS-->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 		<link rel="stylesheet" href="../site.css">
@@ -34,9 +57,50 @@
 		<body>
 			<div class="body-div mx-auto">
 				<div class="container">
-					<span style="font-size: 35px;">Maxtrip</span> <span style="font-size: 22px;">&ensp;· &ensp;2021</span>
-					<div class="col-lg-6 col-sm-12 px-1 proj">
-						More details coming soon!
+					<span style="font-size: 35px;">Maxtrip</span> <span style="font-size: 22px;">&ensp;· &ensp;2021 (Ongoing)</span>
+					<div class="row py-lg-1 py-sm-0">
+						<div class="col-lg-6 col-sm-12 px-1 proj">
+							<br>
+							Developed in response to the rising number of multi-platform telematic activities happening within the lab during the pandemic,
+							MaxTrip was designed to control all aspects of the JackTrip startup and connection process within Max, 
+							lowering the barrier of entry for students and performers with Max experience but without practical JackTrip knowledge. 
+							Its use also allows for greater control and flexibility of established JackTrip connections for both users and technicians.
+							<br> <br>
+							
+							Using the shell.mxo external, Max can execute terminal commands from within the programming environment and can effectively run the Jack ecosystem of programs.
+							The patch consists of three modules, each containing its own shell.mxo in order to run multiple terminal commands simultaneously. 
+							<br> <br>
+						</div>
+						<div class="col-lg-6 col-sm-12 px-1 proj">
+							<img src="/images/maxtrip/maxtrip1.png" class="img-fluid rounded proj-page-thumb" alt="Physarum output in black and white">
+						</div>
+					</div>
+					<div class="row py-lg-1 py-sm-0">
+						<div class="col-lg-6 col-sm-12 px-1 proj">
+							<br> <br>
+							The first module allows users to start the Jack server, choosing their desired device/interface, sample rate, and frames/period.
+														
+							<br> <br>
+							The second runs JackTrip, with the option of server or client, hub mode, z-toggle (zero underrun buffer), q value (queue buffer length), 
+							r value (redundancy), setting a custom remote name, and destination IP. Past addresses are stored in a dropdown for fast recall and connection. 
+							Similar output has been achieved through the development of QJackTrip which also acts as a user interface for hosting or connecting to a remote 
+							JackTrip server. This however is a separate application, where maxtrip allows users to stay within the Max ecosystem.
+
+							<br> <br>
+							The final maxtrip module communicates with JMess which allows users to save xml files of established Jack connections. 
+							Users are able to drag a folder of their saved connections into Max to display all viable xmls in a dropdown. When an xml is selected, 
+							users can press “view” to get a visualization of each saved connection in that file without recalling the connections into JackTrip. 
+							Connections can be recalled with an option to “clear” or “append”.
+							
+							<br> <br>
+							“Clear” will send a message to JackTrip to disconnect all active connections, then load and establish the saved connections from the chosen xml file. 
+							“Append” will load and make connections from the chosen xml without clearing the current connections, effectively allowing multiple mappings to be stacked upon each other.
+							<br> <br>
+						</div>
+						<div class="col-lg-6 col-sm-12 px-1 proj">
+							<br> <br>							
+							<img src="/images/maxtrip/maxtrip2-jmess.png" class="img-fluid rounded proj-page-thumb" alt="Jmess control in MaxTrip">
+						</div>
 					</div>
 				</div>
 			</div>
