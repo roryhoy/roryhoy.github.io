@@ -16,6 +16,28 @@ ul{
     line-height: 20px;
 }
 
+.cv-list-head{
+    font-size: 1em;
+}
+
+.cv-list-elem{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.cv-sublist{
+    font-size: 0.7em;
+}
+
+.cv-perform{
+    font-size: 0.7em;
+}
+
+.cv-list-date{
+    font-size: .65em;
+}
+
 .col-centered{
     float: none;
     margin: 0 auto;
