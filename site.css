@@ -12,78 +12,98 @@ Deep purples and blues
 */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&family=Outfit:wght@100;200;300;400&display=swap');
 
-ul{
+ul {
     line-height: 20px;
 }
 
-.cv-list-head{
+.cv-list-head {
     font-size: 1em;
 }
 
-.cv-list-elem{
+.cv-list-elem {
     display: flex;
     justify-content: space-between;
     margin-bottom: 5px;
 }
 
-.cv-sublist{
+.cv-sublist {
     font-size: 0.7em;
 }
 
-.cv-perform{
+.cv-perform {
     font-size: 0.7em;
 }
 
-.cv-list-date{
+.cv-list-date {
     font-size: .65em;
 }
 
-.col-centered{
+.col-centered {
     float: none;
     margin: 0 auto;
-    }
+}
 
-li.pub{
+li.pub {
     margin-bottom: 25px;
     font-family: 'Montserrat', sans-serif;
     color: aliceblue;
 }
 
-body{
+body {
     background: #282828;
     color: aliceblue;
     font-family: 'Montserrat', sans-serif;
 }
 
-#nameTitle{
-    color:#f8ff9b;
+#nameTitle {
+    color: #f8ff9b;
 }
 
-.nav-pills > li > a{
+.nav-pills>li>a {
     color: #888888;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
-    background-color:#f8ff9b;
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background-color: #f8ff9b;
     color: #282828;
 }
 
-.nav-pills{
+.nav-pills {
     font-family: 'Outfit', sans-serif;
     font-weight: 100;
 }
 
-.nav-link:focus, .nav-link:hover{
+.nav-link:focus,
+.nav-link:hover {
     color: aliceblue;
 }
 
+.project-title {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 5px;
+    flex-wrap: wrap;
+}
 
-h1,h2,h3,h4,h5,h6{
+.project-date{
+    padding-top: 10px;
+    align-self: flex-start;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Outfit', sans-serif;
     font-weight: 400;
     color: #f8ff9b;
 
 }
+
+
 
 /* .bio-body{
     background-image: url("/images/bio/lidar-glitch-transparent.gif");
@@ -92,27 +112,26 @@ h1,h2,h3,h4,h5,h6{
     backdrop-filter: brightness(12%)
 } */
 
-header{
+header {
     background-color: #282828;
 }
 
-.header-container{
+.header-container {
     width: 75vw;
 }
 
-.body-div{
+.body-div {
     width: 75vw;
 }
 
-.proj-thumb{
+.proj-thumb {
     width: 100vw;
     height: 350px;
     object-fit: cover;
 }
 
-.proj-page-thumb{
+.proj-page-thumb {
     width: 100vw;
     height: 500px;
     object-fit: cover;
 }
-
