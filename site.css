@@ -125,7 +125,12 @@ body {
    
 }
 
-
+/* mobile styling */
+@media only screen and (max-width: 767px){
+    .proj-text {
+        margin: 0px;
+    }
+}
 
 
 h1,
