@@ -16,6 +16,10 @@ ul {
     line-height: 20px;
 }
 
+
+
+
+/* CV Styling */
 .cv-list-head {
     font-size: 1em;
 }
@@ -37,6 +41,9 @@ ul {
 .cv-list-date {
     font-size: .65em;
 }
+
+/* end CV Styling */
+
 
 .col-centered {
     float: none;
@@ -86,10 +93,39 @@ body {
     flex-wrap: wrap;
 }
 
-.project-date{
+.project-date {
     padding-top: 10px;
     align-self: flex-start;
 }
+
+
+.proj-text {
+    opacity: 0.0;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size:xx-large;
+    color: #f8ff9b;
+    position: relative;
+    top: -50%;
+    z-index: 2;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    /* user-select: none; */
+    text-align: center;
+    
+    /* -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease; */
+   
+}
+
+
+
 
 h1,
 h2,
@@ -103,15 +139,6 @@ h6 {
 
 }
 
-
-
-/* .bio-body{
-    background-image: url("/images/bio/lidar-glitch-transparent.gif");
-    background-repeat: no-repeat;
-    background-size: cover;
-    backdrop-filter: brightness(12%)
-} */
-
 header {
     background-color: #282828;
 }
@@ -124,14 +151,55 @@ header {
     width: 75vw;
 }
 
+
 .proj-thumb {
     width: 100vw;
     height: 350px;
-    object-fit: cover;
+    object-fit:cover;
+    -webkit-filter: brightness(100%);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
+
+
+.proj:hover .proj-thumb{
+    -webkit-filter: brightness(25%);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+
+.proj:hover .proj-text{
+    opacity: 1.0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.proj a{
+    text-decoration: none;
+}
+
+/* .proj-thumb:hover {
+    -webkit-filter: brightness(30%);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+} */
+
 
 .proj-page-thumb {
     width: 100vw;
     height: 500px;
-    object-fit: cover;
+    object-fit:cover;
 }
