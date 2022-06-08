@@ -132,7 +132,7 @@ body {
     }
 
     .proj:hover .proj-thumb {
-        border:#f8ff9b;
+        border:2px solid #f8ff9b;
         -webkit-filter: brightness(100%);
         -webkit-transition: all 0.5s ease;
         -moz-transition: all 0.5s ease;
