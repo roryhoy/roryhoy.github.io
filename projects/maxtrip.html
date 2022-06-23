@@ -73,20 +73,23 @@
 				<div class="row py-lg-1 py-sm-0">
 					<div class="col-lg-6 col-sm-12 px-1 proj">
 						<p>Developed in response to the rising number of multi-platform telematic activities happening
-							within the lab during the pandemic,
+							within the <a href="http://dispersionlab.org/">DisPerSion Lab</a> during the pandemic,
 							MaxTrip was designed to control all aspects of the JackTrip startup and connection process
 							within Max,
 							lowering the barrier of entry for students and performers with Max experience but without
 							practical JackTrip knowledge.
 							Its use also allows for greater control and flexibility of established JackTrip connections
 							for both users and technicians.</p>
+
 						<p>Using the <a href="https://github.com/jeremybernstein/shell" target="_blank">shell.mxo</a>
 							external, Max can execute terminal commands from within the programming environment and can
 							effectively run the Jack ecosystem of programs.
 							The patch consists of three modules, each containing its own shell.mxo in order to run
 							multiple terminal commands simultaneously.</p>
+
 						<p>The first module allows users to start the Jack server, choosing their desired
 							device/interface, sample rate, and frames/period.</p>
+
 						<p>The second runs JackTrip, with the option of server or client, hub mode, z-toggle (zero
 							underrun buffer), q value (queue buffer length),
 							r value (redundancy), setting a custom remote name, and destination IP. Past addresses are
@@ -95,35 +98,49 @@
 							user interface for hosting or connecting to a remote
 							JackTrip server. This however is a separate application, where maxtrip allows users to stay
 							within the Max ecosystem.</p>
-						<p>The final maxtrip module communicates with JMess which allows users to save xml files of
-							established Jack connections.
-							Users are able to drag a folder of their saved connections into Max to display all viable
-							xmls in a dropdown. When an xml is selected,
-							users can press “view” to get a visualization of each saved connection in that file without
-							recalling the connections into JackTrip.
-							Connections can be recalled with an option to “clear” or “append”.</p>
-						<p>“Clear” will send a message to JackTrip to disconnect all active connections, then load and
-							establish the saved connections from the chosen xml file.
-							“Append” will load and make connections from the chosen xml without clearing the current
-							connections, effectively allowing multiple mappings to be stacked upon each other.</p>
-						<p>Presented in Hoy R., D. Van Nort, "A Technological and Methodological Ecosystem for Dynamic
+
+						<p>"Staging" is the final module, allowing for various control over live and preset connections.
+							Users can
+							make alterations and "stage" their intended future connections before "pushing" these to the
+							live connection graph. These connections can be appended to what is already connected, or
+							sent with the "clear" message to wipe all current connections and establish the staged
+							connections as the current live connections. Additionally, connections can be saved and
+							recalled from both the live connection graph or from within the staging area. The staging
+							module uses JMess, allowing for .xml storage and retrieval of desired connections. </p>
+
+						<p>Users are able to drag a folder of their saved connections into Max to display all viable
+							.xml files in a dropdown which is visible when not in "Live Staging" mode. When an xml is
+							selected, “stage” can be pressed to get a visualization of each saved connection in that
+							file without recalling the connections into JackTrip.</p>
+
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/sYuNwJXmKe8"
+							title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen></iframe>
+
+
+						<br><br>
+						<p>Presented in Hoy R., D. Van Nort, "A Technological and Methodological Ecosystem for
+							Dynamic
 							Virtual Acoustics in Telematic Performance Contexts", in Proc. of Audio Mostly, 2021. <a
 								href="https://dl.acm.org/doi/fullHtml/10.1145/3478384.3478425" target="_blank">[ACM
 								Digital Library]</a>, alongside <a href="../projects/spat.html"
 								target="_blank">dispersion.Spat</a>.</p>
 
-								Audio Mostly 21 Presentation:
+						Audio Mostly 21 Presentation:
 						<iframe width="560" height="315" src="https://www.youtube.com/embed/llPxde_pRqQ"
 							title="YouTube video player" frameborder="0"
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 							allowfullscreen></iframe>
+
 					</div>
 					<div class="col-lg-6 col-sm-12 px-1 proj">
 						<img src="/images/maxtrip/maxtrip1.png" class="img-fluid rounded proj-page-thumb"
 							alt="MaxTrip central UI">
-							<br> <br>
+						<br><br>
 						<img src="/images/maxtrip/maxtrip2-jmess.png" class="img-fluid rounded proj-page-thumb"
-							alt="Jmess control in MaxTrip">
+							alt="Staging module in MaxTrip">
+
 					</div>
 				</div>
 			</div>
