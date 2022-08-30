@@ -16,8 +16,9 @@ ul {
     line-height: 20px;
 }
 
-
-
+body{
+    width: 99vw;
+ }
 
 /* CV Styling */
 .cv-list-head {
@@ -64,6 +65,15 @@ body {
 
 #nameTitle {
     color: #f8ff9b;
+}
+
+#nameTitle:hover{
+    color:aliceblue;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 .nav-pills>li>a {
