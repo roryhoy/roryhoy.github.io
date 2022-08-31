@@ -12,6 +12,10 @@ Deep purples and blues
 */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&family=Outfit:wght@100;200;300;400&display=swap');
 
+ion-icon {
+    pointer-events: none;
+}
+
 ul {
     line-height: 20px;
 }
