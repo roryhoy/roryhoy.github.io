@@ -233,3 +233,7 @@ header {
     height: 500px;
     object-fit: cover;
 }
+
+.home-pic{
+    border-radius: 5%;
+}
