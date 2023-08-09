@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/icon" href="../images/hoyfavicon.ico" />
+
+	<link rel="canonical" href="https://www.rhoy.ca/projects/face.html" />
+	<meta name="description"
+		content="An embodied face tracking virtual acoustics system by Rory Hoy.">
+	<meta name="keywords"
+		content="virtual acoustics, face tracking, embodied, Projects, Rory, Hoy, PhD, student, sound, artist, Canadian, York, University, artificial, life, telematic, music, telepresence, virtual, digital, media, dispersion, Toronto">
+	<meta name="author" content="Rory Hoy">
+	<meta name="robots" content="index, follow">
+	<meta name="twitter:title" content="Rory Hoy · Embodied Virtual Acoustics" />
+	<meta name="twitter:image" content="/images/face/face-crop.png" />
+	<meta name="twitter:url" content="https://www.rhoy.ca/projects/face.html" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:description"
+		content="An embodied face tracking virtual acoustics system by Rory Hoy." />
+	<meta itemprop="name" content="Rory Hoy · Embodied Virtual Acoustics" />
+	<meta itemprop="url" content="https://www.rhoy.ca/projects/face.html" />
+	<meta itemprop="description"
+		content="An embodied face tracking virtual acoustics system by Rory Hoy." />
+	<meta itemprop="thumbnailUrl" content="/images/face/face-crop.png" />
+	<meta property="og:site_name" content="Rory Hoy" />
+	<meta property="og:title" content="Rory Hoy · Embodied Virtual Acoustics" />
+	<meta property="og:url" content="https://www.rhoy.ca/projects/face.html" />
+	<meta property="og:type" content="website" />
+	<meta property="og:description"
+		content="An embodied face tracking virtual acoustics system by Rory Hoy." />
+	<meta property="og:image" content="/images/face/face-crop.png" />
+	<meta property="og:image:width" content="1890" />
+	<meta property="og:image:height" content="831" />
+
+	<!--Bootstrap CSS-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<link rel="stylesheet" href="../site.css">
+
+	<!--Bootstrap + Popper JS-->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+		crossorigin="anonymous"></script>
+	<title>Rory Hoy · Embodied Virtual Acoustics</title>
+
+</head>
+
+
+<main class="w-100">
+	<header class="d-flex flex-wrap justify-content-center">
+		<div class="header-container d-flex flex-wrap justify-content-between border-bottom py-3 mb-4">
+			<a href="../index.html" class="d-flex align-items-center text-dark text-decoration-none">
+				<h1 class="fs-4" id="nameTitle">Rory Hoy</h1>
+			</a>
+
+			<ul class="nav nav-pills">
+				<!--<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>-->
+				<li class="nav-item"><a href="../projects.html" class="nav-link active" aria-current="page">Projects</a>
+				</li>
+				<li class="nav-item"><a href="../writing.html" class="nav-link">Writing</a></li>
+				<li class="nav-item"><a href="../cv.html" class="nav-link">CV</a></li>
+				<li class="nav-item"><a href="../contact.html" class="nav-link">Contact</a></li>
+			</ul>
+		</div>
+	</header>
+
+	<body>
+		<div class="body-div mx-auto">
+			<div class="container">
+				<div class="project-title">
+					<h2>Embodied Spatial Audio Control</h2>
+					<div class="project-date">&ensp;·&ensp;2023 (ongoing)</div>
+				</div>
+				<div class="row py-lg-1 py-sm-0">
+					<div class="col-lg-6 col-sm-12 px-1 proj">
+						<p> This ongoing research explores a browser-based solution for unique sonic perspectives in telematic performance via facial tracking.</p>
+                        <p>Angular rotation of the face is calculated for the direction of focus in relation to a webcam, changing the virtual orientation of the user within a shared virtual acoustics environment. 
+                            This sonic perspective is relayed back to the player, allowing for personal embodied control of spatial audio.</p>
+                        <p> Core inspirations of the system are to allow for both high quality audio, low latency, and accessibility for a wide array of potential setups for telematic performers. 
+                            With this in mind it is key that the central interface of the system is hosted online and reachable at a public url to minimize any potential setup issues, or issues with running applications on each participant’s machine.</p>
+
+                        <p> The webpage serves an instance of <a href="https://justadudewhohacks.github.io/face-api.js/docs/index.html">face-api.js</a> to capture and relay facial landmarks of
+                            users to the server. This data is fetched by an accompanying Max patch on the host/central lab computer and used to
+                            control the relative orientation of each player in the virtual
+                            acoustics system. </p>
+                            
+                         <p>All players connect to a central machine
+                            running JackTrip for bidirectional audio. Jack routing on
+                            the host machine allows for each player’s audio to be sent
+                            individually to source locations within the Spat environment,
+                            then the resulting binaural output of each Spat instance from
+                            the perspective of each player is sent back over JackTrip. A
+                            virtual audio device with an appropriate number of channels
+                            is used to route all audio from Max as separate binaural pairs
+                            back to remote players. This device is typically BlackHole
+                            64ch in our use case, as it can support 16 players in a
+                            stereo in / binaural out configuration.</p>   
+                             
+                        
+					</div>
+					<div class="col-lg-6 col-sm-12 px-1 proj">
+						<img src="/images/face/face.png" class="img-fluid rounded proj-page-thumb"
+							alt="Face tracking UI">
+							<br><br>
+						
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</main>
+
+</html>
