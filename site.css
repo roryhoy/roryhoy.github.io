@@ -24,6 +24,10 @@ body{
     width: 99vw;
  }
 
+a{
+    color: #f8ff91;
+}
+
 /* CV Styling */
 .cv-list-head {
     font-size: 1em;
