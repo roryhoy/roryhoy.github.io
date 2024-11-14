@@ -166,7 +166,7 @@ header {
 
 .proj-thumb {
     width: 100vw;
-    height: 350px;
+    height: 400px;
     object-fit: cover;
     -webkit-filter: brightness(100%);
     -webkit-transition: all 0.5s ease;
@@ -235,10 +235,20 @@ header {
 
 .proj-page-thumb {
     width: 100vw;
-    height: 500px;
     object-fit: cover;
 }
 
 .home-pic{
     border-radius: 5%;
+}
+
+.home-icon{
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 100%;
+}
+
+.home-icon:hover{
+    background-color: grey;
 }
