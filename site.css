@@ -68,7 +68,8 @@ body {
 }
 
 #nameTitle {
-    color: #f8ff9b;
+    color: #00ffc8;
+    /* f8ff9b - yellow */
 }
 
 #nameTitle:hover{
@@ -86,7 +87,7 @@ body {
 
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
-    background-color: #f8ff9b;
+    background-color: #00ffc8;
     color: #282828;
 }
 
