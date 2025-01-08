@@ -11,7 +11,7 @@ Deep purples and blues
 
 */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&family=Outfit:wght@100;200;300;400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Iceberg&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 ion-icon {
     pointer-events: none;
 }
@@ -61,23 +61,25 @@ a{
 
 li.pub {
     margin-bottom: 25px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Quantico', sans-serif;
     color: aliceblue;
 }
 
 body {
     background: #282828;
     color: aliceblue;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Quantico', sans-serif;
+    font-weight: 400;
 }
 
 #nameTitle {
-    color: #00ffc8;
+    color: #ffffff;
+    font-family: 'Iceberg', sans-serif;
     /* f8ff9b - yellow */
 }
 
 #nameTitle:hover{
-    color:aliceblue;
+    color:#f8ff91;
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
@@ -91,12 +93,12 @@ body {
 
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
-    background-color: #00ffc8;
+    background-color: #f8ff9b;
     color: #282828;
 }
 
 .nav-pills {
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Iceberg', sans-serif;
     font-weight: 300;
 }
 
@@ -120,7 +122,7 @@ body {
 
 .proj-text {
     opacity: 0.0;
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Iceberg', sans-serif;
     font-weight: 400;
     font-size: xx-large;
     color: #f8ff9b;
@@ -150,7 +152,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Iceberg', sans-serif;
     font-weight: 400;
     color: #f8ff9b;
 
