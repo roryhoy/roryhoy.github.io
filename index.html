@@ -114,7 +114,13 @@
 		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 	</main>
-
+	<!-- sitemaps were not grabbing links from loading in js header so here ya go bots -->
+	<nav aria-hidden="true" class="seo-nav">
+		<a href="/projects.html">Projects</a>
+		<a href="/writing.html">Writing</a>
+		<a href="/cv.html">CV</a>
+		<a href="/contact.html">Contact</a>
+	</nav>
 </body>
 <script>
 	fetch("/header.html")
