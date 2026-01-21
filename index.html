@@ -47,7 +47,7 @@
 </head>
 
 <body class="bio-body">
-		<div id="site-header"></div>
+	<div id="site-header"></div>
 
 	<main class="w-100">
 
@@ -72,8 +72,9 @@
 							19/21/23), and methodologies for networked musical performance (Audio Mostly 21).</p>
 						<p>My musical performance practice considers timbral movement through noise, spatial audio, and
 							low frequency rhythmic content through a processed bass guitar setup. This practice is honed
-							through various musical projects, and as an active member of the <a
-								href="http://dispersionlab.org/eao/" target="_blank">Doug Van Nort Electro-Acoustic
+							through various musical projects, and as an active member of <a
+								href="https://dvntsea.com/projects/thee-doug-van-nort-electro-acoustic-orchestra-2020-present/"
+								target="_blank">thee Doug Van Nort Electro-Acoustic
 								Orchestra. </a>
 						</p>
 						<p>Thanks for checking out my work! Please reach out with any inquiries.</p>
@@ -116,15 +117,15 @@
 
 </body>
 <script>
-  fetch("/header.html")
-    .then(r => r.text())
-    .then(html => {
-      document.getElementById("site-header").innerHTML = html;
-	  requestAnimationFrame(() => {
-        document.body.classList.add("reveal");
-      });
-    //   document.querySelector('a[href="/projects.html"]')?.classList.add("active");
-    });
+	fetch("/header.html")
+		.then(r => r.text())
+		.then(html => {
+			document.getElementById("site-header").innerHTML = html;
+			requestAnimationFrame(() => {
+				document.body.classList.add("reveal");
+			});
+			//   document.querySelector('a[href="/projects.html"]')?.classList.add("active");
+		});
 </script>
 
 </html>
