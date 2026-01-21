@@ -1,8 +1,5 @@
 # roryhoy.github.io
 
-Rory David Hoy personal portfolio/info site - 
-
-bio + links, selected projects, writing, and CV
-
+Rory David Hoy's personal portfolio/info site:
 
 [Check it out here!](https://www.rhoy.ca)
