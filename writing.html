@@ -183,6 +183,9 @@
 		.then(html => {
 			document.getElementById("site-header").innerHTML = html;
 			document.querySelector('a[href="/writing.html"]')?.classList.add("active");
+			requestAnimationFrame(() => {
+				document.body.classList.add("reveal");
+			});
 		});
 </script>
 

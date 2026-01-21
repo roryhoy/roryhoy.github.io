@@ -120,6 +120,9 @@
     .then(r => r.text())
     .then(html => {
       document.getElementById("site-header").innerHTML = html;
+	  requestAnimationFrame(() => {
+        document.body.classList.add("reveal");
+      });
     //   document.querySelector('a[href="/projects.html"]')?.classList.add("active");
     });
 </script>

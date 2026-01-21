@@ -204,6 +204,9 @@
 		.then(html => {
 			document.getElementById("site-header").innerHTML = html;
 			document.querySelector('a[href="/projects.html"]')?.classList.add("active");
+			requestAnimationFrame(() => {
+				document.body.classList.add("reveal");
+			});
 		});
 </script>
 

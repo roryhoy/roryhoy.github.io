@@ -48,12 +48,15 @@
 
 </body>
 <script>
-  fetch("/header.html")
-    .then(r => r.text())
-    .then(html => {
-      document.getElementById("site-header").innerHTML = html;
-      document.querySelector('a[href="/projects.html"]')?.classList.add("active");
-    });
+	fetch("/header.html")
+		.then(r => r.text())
+		.then(html => {
+			document.getElementById("site-header").innerHTML = html;
+			document.querySelector('a[href="/projects.html"]')?.classList.add("active");
+			requestAnimationFrame(() => {
+				document.body.classList.add("reveal");
+			});
+		});
 </script>
 
 </html>

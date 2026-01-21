@@ -12,6 +12,7 @@ Deep purples and blues
 */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&family=Outfit:wght@100;200;300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Iceberg&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 ion-icon {
     pointer-events: none;
 }
@@ -20,11 +21,26 @@ ul {
     line-height: 20px;
 }
 
-body{
+body {
     width: 99vw;
- }
+    opacity: 0;
+}
 
-a{
+body.reveal {
+    opacity: 1;
+    transition: opacity 200ms ease-out;
+}
+
+#site-header {
+    opacity: 0;
+    transition: opacity 200ms ease-out;
+}
+
+body.reveal #site-header {
+    opacity: 1;
+}
+
+a {
     color: #f8ff91;
 }
 
@@ -78,8 +94,8 @@ body {
     /* f8ff9b - yellow */
 }
 
-#nameTitle:hover{
-    color:#f8ff91;
+#nameTitle:hover {
+    color: #f8ff91;
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
@@ -213,7 +229,7 @@ header {
     }
 
     .proj:hover .proj-thumb {
-        border:3px solid #f8ff9b;
+        border: 3px solid #f8ff9b;
         -webkit-filter: brightness(25%);
         -webkit-transition: all 0.5s ease;
         -moz-transition: all 0.5s ease;
@@ -222,7 +238,7 @@ header {
         transition: all 0.5s ease;
     }
 
-    .nav{
+    .nav {
         font-size: 80%;
         font-weight: 400;
     }
@@ -244,18 +260,18 @@ header {
     object-fit: cover;
 }
 
-.home-pic{
+.home-pic {
     border-radius: 5%;
 }
 
-.home-icon{
+.home-icon {
     width: 25px;
     height: 25px;
     background-color: white;
     border-radius: 100%;
-    border-style:dashed;
+    border-style: dashed;
 }
 
-.home-icon:hover{
+.home-icon:hover {
     background-color: grey;
 }
