@@ -33,7 +33,7 @@
 	<meta property="og:description"
 		content="ESP Soundpainting Gesture Recognition is a gesture recognition performance tool by Rory Hoy and Doug Van Nort." />
 	<!-- !!GET PICTURE!! -->
-	<meta property="og:image" content="/images/elaborated/elaborated1.png" /> 
+	<meta property="og:image" content="/images/elaborated/elaborated1.png" />
 	<meta property="og:image:width" content="1890" />
 	<meta property="og:image:height" content="831" />
 
@@ -61,39 +61,87 @@
 				</div>
 				<div class="row py-lg-1 py-sm-0">
 					<div class="col-lg-6 col-sm-12 px-1 proj">
-						<p>what is it ESP - Electro-Acoustic Soundpainting</p>
-						<p>why</p>
-						<p>where presented</p>
-						<!-- https://vimeo.com/1100238572/43bd884032#t=49m00s -->
+						<p>This project presents a machine-learning system for automatic recognition of Soundpainting
+							gestures, enabling direct, real-time control of computational musical agents by a conductor.
+							Built in Python and using MediaPipe hand and skeletal tracking, the system recognizes 41
+							electro/acoustic Soundpainting (ESP) gestures from a standard webcam, without requiring
+							specialized hardware.</p>
 
-						<p>Published in smc 2025 conference proceedings:
+						<p>Gestures are decomposed into single-hand “gesture components” and classified across four
+							vertical body regions (legs, torso, head, above head) using multiple trained models. These
+							components are recombined into full Soundpainting gestures, allowing flexible, modular
+							expansion
+							of the gesture vocabulary and composer-specific training. Recognition output is transmitted
+							via
+							OSC to Max, where it controls autonomous musical agents designed as stylistic
+							“doppelgangers” of
+							human performers in <a
+								href="https://dvntsea.com/projects/thee-doug-van-nort-electro-acoustic-orchestra-2020-present/"
+								target="_blank">thee Doug Van Nort Electro-Acoustic
+								Orchestra</a>. These agents were created for the <a
+								href="/projects/ensemble_co-create.html" target="_blank">Human/Machine Ensemble
+								Performance</a>
+							project.</p>
+
+						<p>The system removes the need for a human intermediary between conductor and machine
+							performers,
+							supports composer-agnostic retraining, and achieves an average recognition accuracy of ~82%
+							across tested gestures.</p>
+
+						<p>Published in the Sound and Music Computing 2025 conference proceedings:
 							<a href="https://zenodo.org/records/15843324" target="_blank">[PDF available on Zenodo]</a>
 						</p>
 						<p>ESP Soundpainting Gesture Recognition was preseted at SMC 2025 in Graz, Austria. <br>
-							You can watch the presentation <a
-								href="https://vimeo.com/1100238572/43bd884032#t=49m00s"
+							You can watch the presentation <a href="https://vimeo.com/1100238572/43bd884032#t=49m00s"
 								target="_blank">here</a>!</p>
 					</div>
+
 					<div class="col-lg-6 col-sm-12 px-1 proj">
-						<img src="/images/elaborated/elaborated1.png" class="img-fluid rounded proj-page-thumb"
-							alt="Connection visuals">
-						<br><br>
 						<div class="col-lg-6 col-sm-12 px-1 py-1 proj">
-							<caption><small>An older test only using sine waves to depict flow of machine
-									voices.</small> </caption>
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/M746UK93Js8"
+							<iframe width="560" height="315"
+								src="https://www.youtube.com/embed/T0DCT_MxK_8?si=H6grYi0lg40RGB8H"
 								title="YouTube video player" frameborder="0"
-								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-								allowfullscreen></iframe>
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 						</div>
+						<p> Above: A set of example gestures, performed with estimation logging displayed. "EAO
+							Gesture" refers to the resulting classified and output gesture. The bottom interfaces
+							depicts the Max routing patch for incoming messages, and all input can be seen on the
+							right-side print console.</p>
+						<p>Below: System configuration settings on startup.</p>
+						<img src="/images/soundpainting/setup_ui.png"
+							class="img-fluid rounded proj-page-thumb"
+							alt="ESP Soundpainting Gesture Recognition Accuracy Chart">
 					</div>
+
 				</div>
 				<div class="row py-lg-1 py-sm-0">
-					<div class="col-lg-12 col-sm-12 px-1 py-1 proj">
-						<img src="/images/elaborated/elaborated2.png" class="img-fluid rounded proj-page-thumb"
-							alt="Presentation Max UI">
+					<div class="col-lg-6 col-sm-12 px-1 py-1 proj">
+						<img src="/images/soundpainting/test_accuracy_long.png"
+							class="img-fluid rounded proj-page-thumb"
+							alt="ESP Soundpainting Gesture Recognition Accuracy Chart">
+					</div>
+					<div class="col-lg-6 col-sm-12 px-1 py-1 proj">
+						<p>The system achieves an overall average gesture recognition accuracy of 78.3%, increasing to
+							81.9%
+							when excluding gestures found to be unreliable in practice. Of the 41 implemented ESP
+							gestures,
+							32 achieve ≥75% accuracy, with nine gestures reaching 100% accuracy across both tested
+							conductors. These highest-performing gestures are predominantly static, clearly defined hand
+							shapes with minimal temporal variation.</p>
+						<p>Accuracy was evaluated using cross-performer testing to assess interoperability. Models
+							trained
+							by one conductor were tested by another, with gestures performed under natural performance
+							timing rather than exaggerated or slowed movements. A gesture was counted as correct only if
+							it
+							was recognized on the first attempt, within a 1–2 second window that matches human
+							perceptual
+							and response times in live Soundpainting performance.
+						</p>
 					</div>
 				</div>
+
+
 			</div>
 		</div>
 	</main>
