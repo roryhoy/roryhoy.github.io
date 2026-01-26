@@ -1,0 +1,87 @@
+[
+	{
+		"id": "soundpainting",
+		"title": "ESP Soundpainting Gesture Recognition",
+		"href": "/projects/soundpainting_recognition.html",
+		"image": "/images/soundpainting/density-gesture.png",
+		"alt": "ESP Soundpainting Gesture Recognition Thumbnail"
+	},
+    {
+		"id": "ensemble",
+		"title": "Human/Machine Ensemble Performance",
+		"href": "/projects/ensemble_co-create.html",
+		"image": "/images/ensemble/dicy_staging_reorder.png",
+		"alt": "Human/Machine Ensemble Musical Performance Project Thumbnail"
+	},
+	{
+		"id": "face",
+		"title": "Embodied Spatial Audio Control",
+		"href": "/projects/face.html",
+		"image": "/images/face/face-crop.png",
+		"alt": "Face tracking embodied spatial audio Project Thumbnail"
+	},
+	{
+		"id": "elabd",
+		"title": "eLabOrateD",
+		"href": "/projects/elaborated.html",
+		"image": "/images/elaborated/elaborated1edit.png",
+		"alt": "eLabOrateD Project Thumbnail"
+	},
+	{
+		"id": "maxtrip",
+		"title": "dispersion.maxtrip",
+		"href": "/projects/maxtrip.html",
+		"image": "/images/maxtrip/maxtrip1crop.png",
+		"alt": "Maxtrip Project Thumbnail"
+	},
+	{
+		"id": "biofeed",
+		"title": "Biofeedback Crystallization",
+		"href": "/projects/MTF2021.html",
+		"image": "/images/mtf21/cymatics.jpg",
+		"alt": "Biofeedback Crystallization Project Thumbnail"
+	},
+	{
+		"id": "locus",
+		"title": "Locus Diffuse",
+		"href": "/projects/locus.html",
+		"image": "/images/locus/locus1.png",
+		"alt": "Locus Diffuse Project Thumbnail"
+	},
+	{
+		"title": "The Hours Lost",
+		"href": "/projects/hourslost.html",
+		"image": "/images/hours/skyview.png",
+		"alt": "The Hours Lost Project Thumbnail"
+	},
+	{
+		"title": "dispersion.spat",
+		"href": "/projects/spat.html",
+		"image": "/images/spat/spat1crop.png",
+		"alt": "DisPerSion.Spat Project Thumbnail"
+	},
+	{
+		"title": "dispersion.eLabOrate",
+		"href": "/projects/elaborate.html",
+		"image": "/images/eLabOrate/elaborate_ui.png",
+		"alt": "DisPerSion.eLabOrate Project Thumbnail"
+	},
+	{
+		"title": "Physarum",
+		"href": "/projects/physarum.html",
+		"image": "/images/Physarum/physarum_generative1.png",
+		"alt": "Physarum Project Thumbnail"
+	},
+	{
+		"title": "Transmissions of 3",
+		"href": "/projects/transmissions.html",
+		"image": "/images/Transmissions/To3_2.png",
+		"alt": "Transmissions of 3 Project Thumbnail"
+	},
+	{
+		"title": "Lucid",
+		"href": "/projects/lucid.html",
+		"image": "/images/Lucid/islands.png",
+		"alt": "Lucid Project Thumbnail"
+	}
+]
